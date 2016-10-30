@@ -24,7 +24,7 @@ visualizar datos de excursiones (tiempos, lugares, mapas, etc).
 Se va a utilizar una arquitectura de microservicios, es decir, estará compuesta por diferentes módulos o servicios que, 
 juntos, compondrán la aplicación final, pero a la vez, son independientes unos de los otros.
 
-El Bot que se va a crear utiliza la [Telegram Bot API](https://core.telegram.org/bots/api) que está en Python.
+El Bot que se va a crear utiliza la [Telegram Bot API](https://github.com/eternnoir/pyTelegramBotAPI) que está en Python.
 
 ## Microservicios
 
@@ -37,4 +37,13 @@ En un principio se ha planteado la realización de tres microservicios, que pued
 Y cada uno de ellos con una Base de Datos.
 
 ![Arquitectura microservicios](http://i1175.photobucket.com/albums/r629/Cesar_Albusac_Jorge/CLOUD%20COMPUTING/Blank%20Diagram%20-%20Page%201%201_zps46fwxuvw.png)
+
+## Back-end
+
+Se utilizará una implementación comentada anteriomente, escrita en Python y se usarán algunas bases de datos, en principio MongoDB
+
+## Front-end
+
+La implementación del bot ya nos proporciona esta parte, así que no debemos preocupernos en principio por la misma.
+
 
