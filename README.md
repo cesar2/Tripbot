@@ -44,6 +44,6 @@ Se utilizará una implementación comentada anteriomente, escrita en Python y se
 
 ## Front-end
 
-La implementación del bot ya nos proporciona esta parte, así que no debemos preocupernos en principio por la misma.
+La implementación del Bot ya nos proporciona esta parte, así que no debemos preocupernos en principio por la misma.
 
 
