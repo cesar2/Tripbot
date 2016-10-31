@@ -30,7 +30,7 @@ El Bot que se va a crear utiliza la [Telegram Bot API](https://github.com/eternn
 
 En un principio se ha planteado la realización de tres microservicios, que pueden actuar independientemente de los demás.
 
-* Creación de excursiones/rutas
+* Creación de excursiones y/o rutas
 * Gestión de inventario/equipamiento
 * Consulta sobre excursiones/rutas
 
