@@ -47,3 +47,49 @@ Se utilizará una implementación comentada anteriomente, escrita en Python y se
 La implementación del Bot ya nos proporciona esta parte, así que no debemos preocupernos en principio por la misma.
 
 
+# Provisionamiento
+
+## Ansible
+
+Como hemos comentado anteriormente, vamos a utilizar Python, ya que se trata de un bot de Telegram y, por lo tanto, lo más razonable es usar ansible, ya que está basado en python.
+
+Antes de comenzar debemos instalar ansible. La manera de hacerlo es la siguiente:
+```sudo apt-get install ansible```
+
+Ahora, vamos a crearnos un fichero en el cual especificaremos las herramientas y paquetes que se van a instalar, así como las órdenes que queremos que se ejecuten.
+El archivo debe llamarse **playbook.yml** , y el contenido del mismo, en mi caso, es el siguiente:
+```
+- hosts: all
+  sudo: true
+  tasks:
+    - name: Actualizamos
+      apt: update_cache=yes
+    - name: Instalar pip
+      apt: name=python-setuptools state=present
+      apt: name=python-dev state=present 
+      apt: name=python-pip state=present
+    - name: Instalamos supervisor
+      apt: name=supervisor state=present
+    - name: Instalamos pyTelegramBotAPI
+      pip: name=pyTelegramBotAPI
+    - name: Creamos usuario con contraseña y acceso sudo
+      user: name=user shell=/bin/bash group=admin password=$6$iTc8Gj93cTvKX$T7l9rxN5ZnphhjxdjI9uYzrkXjfG9qv.ppwvAdPtohRWMn9BtOzhndmDcdiG8EnMVtgnorQrh39yNSdsmwYiS1
+```
+
+La contraseña la hemos generado con mkpasswd. Para instalarlo :
+```$ sudo apt-get install makepasswd```
+
+Y para generar la contraseña:
+```mkpasswd --method=sha-512```
+
+Lo que nos imprime en consola será lo que pongamos en el campo password del usuario que creamos.
+
+Ahora, debemos crear el fichero ansible_hosts con la información correspondiente a la máquina que vamos a usar:
+```
+[aws]
+ip ansible_ssh_user='ubuntuCC'
+
+
+
+
+
