@@ -101,6 +101,12 @@ Una vez realizados todos los preparativos procedemos a provisionar la máquina:
 
 ![provisionando](http://i1175.photobucket.com/albums/r629/Cesar_Albusac_Jorge/Captura%20de%20pantalla%20de%202016-11-24%2000-29-57_zpsqenvczqu.png)
 
+https://www.cyberciti.biz/faq/generating-random-password/
+
+https://aws.amazon.com/es/getting-started/tutorials/launch-a-virtual-machine/
+
+
+
 
 
 
