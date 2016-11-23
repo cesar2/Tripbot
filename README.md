@@ -91,5 +91,19 @@ ip ansible_ssh_user='ubuntuCC'
 
 
 
+Por último, debemos generar la pareja de claves como sigue:
+
+```aws ec2 create-key-pair --key-name MyKeyPair --query 'KeyMaterial' --output text > MyKeyPair.pem```
+
+Una vez realizados todos los preparativos procedemos a provisionar la máquina:
+
+```sudo ansible-playbook -i ansible_hosts --private-key parclave.pem -b playbook.yml```
+
+![provisionando](http://i1175.photobucket.com/albums/r629/Cesar_Albusac_Jorge/Captura%20de%20pantalla%20de%202016-11-24%2000-29-57_zpsqenvczqu.png)
+
+
+
+
+
 
 
