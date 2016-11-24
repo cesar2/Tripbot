@@ -88,6 +88,7 @@ Ahora, debemos crear el fichero ansible_hosts con la información correspondient
 ```
 [aws]
 ip ansible_ssh_user='ubuntuCC'
+```
 
 
 
