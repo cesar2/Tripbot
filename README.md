@@ -106,6 +106,36 @@ Una vez realizados todos los preparativos procedemos a provisionar la máquina:
 Para lanzar la máquina, he seguido los pasos de este [tutorial](https://aws.amazon.com/es/getting-started/tutorials/launch-a-virtual-machine/).
 
 
+## Chef
 
+Para realizar el provisionamiento con Chef, en primer lugar debemos conectarnos mediante ssh con nuestr máquina en aws. Debemos hacer uso del par de claves privadas que creamos, así
+como dar permisos a la clave:
+```
+$ chmod 400 parclaves.pem
+$ ssh -i "parclaves.pem" ubuntu@ec2-54-243-0-19.compute-1.amazonaws.com
+```
+
+Ahora, debemos instalar en la máquina tanto git como chef-solo:
+
+```
+curl -L https://www.opscode.com/chef/install.sh | sudo bash
+sudo apt-get install git
+
+```
+
+Ahora, clonamos el repositorio:
+```
+$ git clone https://github.com/cesar2/Tripbot.git
+```
+
+![clonando](http://i1175.photobucket.com/albums/r629/Cesar_Albusac_Jorge/clonando_zpshns2bu4c.png)
+
+Y por último provisionamos con chef:
+```
+sudo chef-solo -c TripBot/provisionamiento/chef/solo.rb
+```
+
+
+![Provisionando con chef](http://i1175.photobucket.com/albums/r629/Cesar_Albusac_Jorge/chef_zpsbubz6bmb.png)
 
 
