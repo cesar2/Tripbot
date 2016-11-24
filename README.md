@@ -139,3 +139,7 @@ sudo chef-solo -c TripBot/provisionamiento/chef/solo.rb
 ![Provisionando con chef](http://i1175.photobucket.com/albums/r629/Cesar_Albusac_Jorge/chef_zpsbubz6bmb.png)
 
 
+# Inscripción al certamen de Proyectos Libres
+![Inscripcion](http://i1175.photobucket.com/albums/r629/Cesar_Albusac_Jorge/certamen_zpsmtlnx2ze.png)
+
+
