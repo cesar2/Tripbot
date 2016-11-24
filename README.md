@@ -76,7 +76,7 @@ El archivo debe llamarse **playbook.yml** , y el contenido del mismo, en mi caso
       user: name=user shell=/bin/bash group=admin password=$6$iTc8Gj93cTvKX$T7l9rxN5ZnphhjxdjI9uYzrkXjfG9qv.ppwvAdPtohRWMn9BtOzhndmDcdiG8EnMVtgnorQrh39yNSdsmwYiS1
 ```
 
-La contraseña la hemos generado con mkpasswd. Para instalarlo :
+La contraseña la hemos generado con mkpasswd como se indica en este [enlace](https://www.cyberciti.biz/faq/generating-random-password/). Para instalarlo :
 ```$ sudo apt-get install makepasswd```
 
 Y para generar la contraseña:
@@ -92,7 +92,7 @@ ip ansible_ssh_user='ubuntuCC'
 
 
 
-Por último, debemos generar la pareja de claves como sigue:
+Por último, si al crear la MV de aws no hemos generado las claves, debemos generar la pareja de claves como sigue:
 
 ```aws ec2 create-key-pair --key-name MyKeyPair --query 'KeyMaterial' --output text > MyKeyPair.pem```
 
@@ -102,13 +102,8 @@ Una vez realizados todos los preparativos procedemos a provisionar la máquina:
 
 ![provisionando](http://i1175.photobucket.com/albums/r629/Cesar_Albusac_Jorge/Captura%20de%20pantalla%20de%202016-11-24%2000-29-57_zpsqenvczqu.png)
 
-https://www.cyberciti.biz/faq/generating-random-password/
 
-https://aws.amazon.com/es/getting-started/tutorials/launch-a-virtual-machine/
-
-
-
-
+Para lanzar la máquina, he seguido los pasos de este [tutorial](https://aws.amazon.com/es/getting-started/tutorials/launch-a-virtual-machine/).
 
 
 
