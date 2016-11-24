@@ -3,7 +3,7 @@ En primer lugar, he accedido a mi máquina virtual en aws:
 $ ssh -i "parclaves.pem" ubuntu@ec2-54-243-0-19.compute-1.amazonaws.com
 ```
 
-![ssh]()
+![ssh](http://i1175.photobucket.com/albums/r629/Cesar_Albusac_Jorge/conexionSSH_zpsewsyo7ci.png)
 
 
 A continuación, he clonado el repositorio de pPedro:
