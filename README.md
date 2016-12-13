@@ -214,6 +214,19 @@ end
 
 ```
 
+Debemos instalar el plugin para aws:
+
+![instalando plugin](http://i1155.photobucket.com/albums/p543/cesypozo/instalando_vagrant_aws_zps80wwuk0k.png)
+
+![vagrant 1](http://i1155.photobucket.com/albums/p543/cesypozo/buenaProv2_zpsxzrfcvt2.png)
+
+![vagrant 2](http://i1155.photobucket.com/albums/p543/cesypozo/buena_prov_2_2_zps8gscstkz.png)
+
+![vagrant 3](http://i1155.photobucket.com/albums/p543/cesypozo/buena_prov_2_3_zpsj4vg8hul.png)
+
+Tras la ejecución, podemos ver en AWS que las máquinas se han creado correctamente:
+
+![aws mauinas creadas](http://i1155.photobucket.com/albums/p543/cesypozo/2_maquinas_creadas_zpsy91vi0zn.png)
 
 # Inscripción al certamen de Proyectos Libres
 ![Inscripcion](http://i1175.photobucket.com/albums/r629/Cesar_Albusac_Jorge/certamen_zpsmtlnx2ze.png)
