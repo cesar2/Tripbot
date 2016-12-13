@@ -222,7 +222,7 @@ Debemos instalar el plugin para utilizar vagrant con aws, tal y como se indica e
 
 ![vagrant 3](http://i1155.photobucket.com/albums/p543/cesypozo/buena_prov_2_3_zpsj4vg8hul.png)
 
-Tras la ejecución, podemos ver en AWS que las máquinas se han creado correctamente:
+Tras la ejecución, podemos ver en AWS que las máquinas se han creado correctamente, como se muestra:
 
 ![aws mauinas creadas](http://i1155.photobucket.com/albums/p543/cesypozo/2_maquinas_creadas_zpsy91vi0zn.png)
 
