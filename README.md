@@ -139,7 +139,87 @@ sudo chef-solo -c TripBot/provisionamiento/chef/solo.rb
 ![Provisionando con chef](http://i1175.photobucket.com/albums/r629/Cesar_Albusac_Jorge/chef_zpsbubz6bmb.png)
 
 
+# Orquestación
+
+He utilizado ansible para realizar la orquestación en Amazon Web Service. 
+
+El archivo que he utilizado es el siguiente: 
+
+'''
+
+Vagrant.configure("2") do |config|
+#config.vm.box = "dummy"
+
+config.vm.define "maquina1" do |maquina1|
+    maquina1.vm.box = "dummy"
+
+maquina1.vm.provider :aws do |aws, override|
+aws.access_key_id = ENV['AWS_KEY']
+aws.secret_access_key = ENV['AWS_SECRET']
+aws.keypair_name = ENV['AWS_KEYNAME']
+
+
+aws.tags = {
+		'Name' => 'Maquina 1 Vagrant',
+		'Environment' => 'vagrant-sandbox'
+    } 
+    
+    aws.region = "us-east-1"
+    aws.ami = "ami-b3123fa4"
+
+    aws.instance_type = "t2.micro"
+    aws.security_groups = ["launch-wizard-1"]
+
+
+override.ssh.username = "ubuntu"
+override.ssh.private_key_path = ENV['AWS_KEYPATH']
+end
+
+maquina1.vm.provision :ansible do |ansible|
+ansible.playbook = "playbook.yml"
+end
+end
+    
+
+config.vm.define "maquina2" do |maquina2|
+    maquina2.vm.box = "dummy"
+
+maquina2.vm.provider :aws do |aws, override|
+aws.access_key_id = ENV['AWS_KEY']
+aws.secret_access_key = ENV['AWS_SECRET']
+aws.keypair_name = ENV['AWS_KEYNAME']
+
+
+aws.tags = {
+		'Name' => 'Maquina 2 vagrant',
+		'Environment' => 'vagrant-sandbox'
+    } 
+    
+    aws.region = "us-east-1"
+    aws.ami = "ami-b3123fa4"
+    aws.instance_type = "t2.micro"
+    aws.security_groups = ["launch-wizard-1"]
+
+
+override.ssh.username = "ubuntu"
+override.ssh.private_key_path = ENV['AWS_KEYPATH']
+end
+
+
+maquina2.vm.provision "chef_solo" do |chef|
+    chef.add_recipe "tripbot"
+
+end
+end
+end
+
+'''
+
+
 # Inscripción al certamen de Proyectos Libres
 ![Inscripcion](http://i1175.photobucket.com/albums/r629/Cesar_Albusac_Jorge/certamen_zpsmtlnx2ze.png)
+
+
+
 
 

@@ -11,7 +11,7 @@ aws.keypair_name = ENV['AWS_KEYNAME']
 
 
 aws.tags = {
-		'Name' => 'Vagrant EC2 Instance ansible',
+		'Name' => 'Maquina 1 Vagrant',
 		'Environment' => 'vagrant-sandbox'
     } 
     
@@ -42,7 +42,7 @@ aws.keypair_name = ENV['AWS_KEYNAME']
 
 
 aws.tags = {
-		'Name' => 'Vagrant EC2 Instance 2',
+		'Name' => 'Maquina 2 Vagrant',
 		'Environment' => 'vagrant-sandbox'
     } 
     
