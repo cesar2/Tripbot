@@ -214,9 +214,7 @@ end
 
 ```
 
-Debemos instalar el plugin para aws:
-
-![instalando plugin](http://i1155.photobucket.com/albums/p543/cesypozo/instalando_vagrant_aws_zps80wwuk0k.png)
+Debemos instalar el plugin para utilizar vagrant con aws, tal y como se indica en el siguiente [enlace](http://www.iheavy.com/2014/01/16/how-to-deploy-on-amazon-ec2-with-vagrant/).
 
 ![vagrant 1](http://i1155.photobucket.com/albums/p543/cesypozo/buenaProv2_zpsxzrfcvt2.png)
 
