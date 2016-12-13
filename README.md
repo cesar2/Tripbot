@@ -145,10 +145,9 @@ He utilizado ansible para realizar la orquestación en Amazon Web Service.
 
 El archivo que he utilizado es el siguiente: 
 
-'''
+```
 
 Vagrant.configure("2") do |config|
-#config.vm.box = "dummy"
 
 config.vm.define "maquina1" do |maquina1|
     maquina1.vm.box = "dummy"
@@ -213,7 +212,7 @@ end
 end
 end
 
-'''
+```
 
 
 # Inscripción al certamen de Proyectos Libres
