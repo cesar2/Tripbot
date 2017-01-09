@@ -238,7 +238,35 @@ Si todo ha funcionado de manera correcta, veremos que en la pestaña Build Detai
 
 ![docker](http://i1155.photobucket.com/albums/p543/cesypozo/Docker2_zpsf4iplesz.png)
 
+El archivo **Docker** es el siguiente:
 
+```
+FROM ubuntu:latest
+
+#Autor
+MAINTAINER Cesar Albusac Jorge <cesypozo@gmail.com>
+
+#Actualizar Sistema Base
+RUN apt-get -y update
+
+#Descargar aplicacion 
+RUN apt-get install -y git
+RUN git clone https://github.com/cesar2/Tripbot.git
+
+
+#Instalar Python y mongodb
+RUN apt-get -y install mongodb
+
+RUN apt-get install -y python-setuptools
+RUN apt-get -y install python-dev
+RUN apt-get -y install build-essential
+RUN apt-get -y install python-psycopg2
+RUN apt-get -y install libpq-dev
+RUN easy_install pip
+RUN pip install --upgrade pip
+```
+
+Puedes ver la comprobación correcta [aquó](https://github.com/cesar2/EjerciciosCloudComputing/blob/master/Temas/comprobandoContenedor.md).
 
 
 # Inscripción al certamen de Proyectos Libres
