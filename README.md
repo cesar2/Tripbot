@@ -229,14 +229,14 @@ Tras la ejecución, podemos ver en AWS que las máquinas se han creado correctam
 
 # Contenedores
 
-Hemos usado **Docker** para el uso de contenedores. En primer lugar, debemos de instalarlo, tal y como se indica en el siguiente [enlace](https://docs.docker.com/engine/installation/linux/ubuntulinux/).
+Para la creación y configuración de entornos de desarrollo virtualizados hemos usado **Docker** , que es capaz de trabajar con múltiples proveedores virtuales.
+En primer lugar, debemos de instalarlo, tal y como se indica en el siguiente [enlace](https://docs.docker.com/engine/installation/linux/ubuntulinux/).
 
 También he creado un [repositorio](https://hub.docker.com/r/cesar2/tripbot/) en Docker Hub que se actualiza cada vez que se actualiza nuestro repositorio en GitHub.
 
 Si todo ha funcionado de manera correcta, veremos que en la pestaña Build Details, que el estado es exitoso:
 
 ![docker](http://i1155.photobucket.com/albums/p543/cesypozo/Docker2_zpsf4iplesz.png)
-
 
 
 
