@@ -266,7 +266,7 @@ RUN easy_install pip
 RUN pip install --upgrade pip
 ```
 
-Puedes ver la comprobación correcta [aquó](https://github.com/cesar2/EjerciciosCloudComputing/blob/master/Temas/comprobandoContenedor.md).
+Puedes ver la comprobación correcta [aquí](https://github.com/cesar2/EjerciciosCloudComputing/blob/master/Temas/comprobandoContenedor.md).
 
 
 # Inscripción al certamen de Proyectos Libres
