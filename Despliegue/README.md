@@ -37,9 +37,9 @@ Las librerias necesarias para el uso del sistema de log, logging y socket, viene
 
 Para cada uno de dichos servicios se ha creado su correspondiente contenedor docker:
 
-    [Contenedor en el que se encuentra el Bot de Telegram](https://hub.docker.com/r/cesar2/tripbot/)(realizado anteriormente) 
-    [Contenedor Excursiones y rutas](https://hub.docker.com/r/cesar2/tripbot-rutas_y_excursiones/)
-    [Contenedor Inventario y equipamiento](https://hub.docker.com/r/cesar2/tripbot-equipamiento/)
+    *[Contenedor en el que se encuentra el Bot de Telegram](https://hub.docker.com/r/cesar2/tripbot/)(realizado anteriormente) 
+    *[Contenedor Excursiones y rutas](https://hub.docker.com/r/cesar2/tripbot-rutas_y_excursiones/)
+    *[Contenedor Inventario y equipamiento](https://hub.docker.com/r/cesar2/tripbot-equipamiento/)
 
 Estos contenedores son los que se desplegarán en AWS utilizando Vagrant.
 
