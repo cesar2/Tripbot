@@ -16,7 +16,7 @@ RUN apt-get -y install supervisor
 RUN apt-get -y install build-essential
 RUN apt-get -y install python-psycopg2
 RUN apt-get -y install libpq-dev
-RUN easy_install pip
+RUN apt-get -y install python-pip
 RUN pip install mlab
 RUN pip install --upgrade pip
 RUN pip install mlab
