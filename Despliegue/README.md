@@ -30,7 +30,7 @@ Este microservicio es el que alberga la funcionalidad principal sin la cuál los
 
 Su funcionamiento es muy sencillo, basta con registrarse, seleccionar el sistema que estamos usando y configurar nuestra aplicación
 
-![log](http://i1175.photobucket.com/albums/r629/Cesar_Albusac_Jorge/ultimo%20hito/log1F_zpspfmrvydi.png)
+![log](http://i1175.photobucket.com/albums/r629/Cesar_Albusac_Jorge/ultimo%20hito/8223b115-8cbf-41c9-b324-0b69384fab43_zpsv41cdd3i.png)
 
 
 Las librerias necesarias para el uso del sistema de log, logging y socket, vienen instaladas por defecto en python, por lo que no es necesario instalarlas
