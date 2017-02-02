@@ -45,6 +45,7 @@ Estos contenedores son los que se desplegarán en AWS utilizando Vagrant.
 
 Ahora que sabemos el funcionamiento de los distintos microservicios y sus contenedores asociados generamos los playbook necesarios y el correspondiente Vagrantfile.
 
+
 Finalmente usamos vagrant up --provider=aws para desplegar todas las máquinas.
 
 
