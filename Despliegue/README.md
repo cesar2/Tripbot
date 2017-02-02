@@ -11,7 +11,7 @@ Se va a utilizar Amazon Web Services (AWS),ya que es la que hemos estado utiliza
 # Gestión de Excursiones y rutas
 
 Como vimos al principio del proyecto, la idea era utilizar una Base de Datos MongoDB. Por ello, la manera más sencilla para gestionar la misma es utilizar un servicio externo.
-Vamos  a usar **[mLab]**(https://mlab.com/), que nos orfrece de manera gratuita hasta 500GB de almacenamiento de datos. Solamente tenemos que crearnos una cuenta y crear la/s BBDD/s que deseemos.
+Vamos  a usar **[mLab]**(https://mlab.com/), que nos orfrece de manera gratuita hasta 500MB de almacenamiento de datos. Solamente tenemos que crearnos una cuenta y crear la/s BBDD/s que deseemos.
 
 ![mlab](http://i1175.photobucket.com/albums/r629/Cesar_Albusac_Jorge/ultimo%20hito/mongo_zpslpxxevzd.png)
 
@@ -28,7 +28,7 @@ Volvemos a necesitar una base de datos MongoDB, por lo que debemos repetir los p
 
 Este microservicio es el que alberga la funcionalidad principal sin la cuál los demás servicios quedarían inutilizados. Ésta interacciona con el usuario, por lo que vamos a configurar un servicio de log en el mismo. Vamos a utilizar un servicio externo para ello. En concreto, vamos a utilizar papertrail.
 
-Su funcionamiento es muy sencillo, basta con registrarse, seleccionar el sistema que estamos usando y configurar nuestra aplicación
+Su funcionamiento es muy sencillo, basta con registrarse, seleccionar el sistema que estamos usando y configurar nuestra aplicación, como se indica en el siguiente [enlace](http://help.papertrailapp.com/kb/configuration/configuring-centralized-logging-from-python-apps/)
 
 ![log](http://i1175.photobucket.com/albums/r629/Cesar_Albusac_Jorge/ultimo%20hito/8223b115-8cbf-41c9-b324-0b69384fab43_zpsv41cdd3i.png)
 
