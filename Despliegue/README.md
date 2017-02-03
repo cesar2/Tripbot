@@ -1,5 +1,4 @@
-## TripBot
-#Despliegue
+# Despliegue
 
 Aquí se ponen en práctica todo lo que hemos visto en la asignatura, realizando un despliege de la infraestructura virtual que utilizará la aplicación **TripBot**.
 
@@ -8,7 +7,7 @@ Aun así, seguiríamos teniendo 3 servicios: El Bot de Telegram, un servicio de 
 Se va a utilizar Amazon Web Services (AWS),ya que es la que hemos estado utilizando anteriormente.
 
 
-# Gestión de Excursiones y rutas
+## Gestión de Excursiones y rutas
 
 Como vimos al principio del proyecto, la idea era utilizar una Base de Datos MongoDB. Por ello, la manera más sencilla para gestionar la misma es utilizar un servicio externo.
 Vamos  a usar **[mLab]**(https://mlab.com/), que nos orfrece de manera gratuita hasta 500MB de almacenamiento de datos. Solamente tenemos que crearnos una cuenta y crear la/s BBDD/s que deseemos.
@@ -19,12 +18,12 @@ Ahora tenemos que utilizar la URI que nos proporcionan para conectarnos a la mis
 Debemos tener la librería **mlban** en python. El provisionamiento para este microservicio debe ser modificado para añadir dicha libreria.
 
 
-# Gestión de inventario y equipamiento.
+## Gestión de inventario y equipamiento.
 
 Volvemos a necesitar una base de datos MongoDB, por lo que debemos repetir los pasos anteriores.
 
 
-# Telegram Bot 
+## Telegram Bot 
 
 Este microservicio es el que alberga la funcionalidad principal sin la cuál los demás servicios quedarían inutilizados. Ésta interacciona con el usuario, por lo que vamos a configurar un servicio de log en el mismo. Vamos a utilizar un servicio externo para ello. En concreto, vamos a utilizar papertrail.
 
